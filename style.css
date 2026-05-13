@@ -30,6 +30,16 @@
 .bg-light{
   background-color: rgba(255, 144, 14,0.1);
 }
+
+.btn-primary{
+  background-color: #FF900E;
+  color: wheat;
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  border: none;
+}
+
 /************** Navbar style *************/
 .navbar{
   justify-content: space-between;
@@ -49,3 +59,38 @@
 }
 
 /**************** Banner section *************/
+.banner-content{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 4rem;
+}
+.banner-img{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/************ responsive media query  ************/
+/* header section  */
+@media screen and (max-width:576px) {
+  .navbar, .nav-link{
+    flex-direction: column;
+  }
+  
+}
+
+
+
+
