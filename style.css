@@ -42,8 +42,12 @@
   font-size: 1.25rem;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
-
+.section-title{
+  font-size: 2.8rem;
+  font-weight: 700;
+}
 main{
   max-width: 1440px;
   margin: 0 auto;
@@ -58,7 +62,7 @@ main > section{
   justify-content: space-between;
   align-items: center;
 }
-.brand{
+.section-brand{
   font-weight: 700;
   font-size: 3rem;
 }
@@ -99,10 +103,6 @@ main > section{
   margin-left: 130px;
   max-width: 530px;
 }
-.features-title{
-  font-size: 2.8rem;
-  font-weight: 700;
-}
 #quick{
   font-weight: 500;
 }
@@ -110,18 +110,69 @@ main > section{
   line-height: 1.6rem;
 }
 
-
+/******* Some Facts section  ********/
+.fact-description{
+  max-width: 540px;
+}
+.facts-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact{
+  border: 1px solid #FF900E;
+  width: 240px;
+  height: 240px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+}
+.fact-number{
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.fact-name{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+/********* Our Sponsors section ***********/
+.sponsors-info{
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: center;
+}
+.Sponsors-companies{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.Sponsors-companies img{
+  filter: grayscale(100%);
+}
 /************ responsive media query  ************/
-/* header section  */
+
 @media screen and (max-width:576px) {
   .navbar, .nav-link, .teams{
     flex-direction: column;
   }
-  .img-container{
-    grid-template-columns: repeat(1, 1fr);
+  .img-container,
+  .facts-container,
+  .Sponsors-companies
+  {
+    grid-template-columns: 1fr;
   }
   .our-features{
     margin-left: 20px;
+  }
+  .facts-container{
+    justify-items: center;
+    gap: 24px;
+  }
+  .Sponsors-companies{
+    justify-items: center;
+    gap: 50px;
   }
 }
 
