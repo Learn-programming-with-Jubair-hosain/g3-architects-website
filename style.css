@@ -109,7 +109,42 @@ main > section{
 .features-description{
   line-height: 1.6rem;
 }
-
+/********** Features you will love & enjoy  *********/
+#features-section-title{
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+}
+/**** Features card ****/
+.features{
+  gap: 140px;
+}
+.feature-card{
+  padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.feature-card .feature-title{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#experience-badge{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -92px;
+  margin-top: -100px;
+  margin-bottom: -72px;
+}
+#experience-year{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.features-img img{
+  width: 100%;
+}
 /******* Some Facts section  ********/
 .fact-description{
   max-width: 540px;
@@ -147,14 +182,26 @@ main > section{
 .Sponsors-companies{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  margin-top: 50px;
 }
 .Sponsors-companies img{
   filter: grayscale(100%);
 }
+/***** Footer section *****/
+.footer{
+  text-align: center;
+  padding: 40px;
+  font-size: 1.25rem;
+}
+
+
 /************ responsive media query  ************/
 
 @media screen and (max-width:576px) {
-  .navbar, .nav-link, .teams{
+  .navbar,
+  .nav-link, 
+  .teams,
+  .features{
     flex-direction: column;
   }
   .img-container,
@@ -174,6 +221,15 @@ main > section{
     justify-items: center;
     gap: 50px;
   }
+  #experience-badge{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.footer{
+  text-align: center;
+  padding: 40px;
+  font-size: 1.25rem;
+}
 }
 
 
